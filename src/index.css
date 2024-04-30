@@ -25,6 +25,8 @@ body {
 }
 #root {
   min-height: 100svh;
+  display: grid;
+  place-content: center;
 }
 /*
   5. Improve media defaults
