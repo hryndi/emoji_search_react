@@ -5,11 +5,11 @@ import EmojiCards from "./components/EmojiCards";
 import { useEmojiSearch } from "../hooks/useEmojiSearch";
 
 function App() {
-  const { setSearchVal, searchVal } = useEmojiSearch();
+  const { setSearchVal, searchVal, fetchedData, emojiFetch } = useEmojiSearch();
   return (
     <Box border={1} width={600} height={800}>
-      <SearchBar searchValSetter={setSearchVal} searchVal={searchVal} />
-      <EmojiCards />
+      <SearchBar fetchClick={emojiFetch} searchValSetter={setSearchVal} searchVal={searchVal} />
+      <EmojiCards fetchedData={fetchedData} />
     </Box>
   );
 }

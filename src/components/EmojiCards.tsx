@@ -3,8 +3,13 @@ import ReactImage from "../assets/react-img.svg";
 import CardMedia from "@mui/material/CardMedia";
 // import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
+import { StateData } from "../../types";
 
-const EmojiCards = () => {
+interface EmojiCardProps {
+  fetchedData: StateData[] | null;
+}
+
+const EmojiCards = ({ fetchedData }: EmojiCardProps) => {
   return (
     <Card sx={{ maxWidth: 250 }}>
       <CardMedia image={ReactImage} component="svg" height={200} width={200} />
