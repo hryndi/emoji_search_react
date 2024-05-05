@@ -17,13 +17,17 @@ const StyledBox = mStyled(Box)`
   align-items: center;
   align-content: center;
   padding: 1rem;
+  
   @media all and (min-width: 651px) {
     margin:1rem
+
   }
   @media all and (max-width: 650px) {
     width: 100vw;
     height: 100vh;
     border-radius: 0;
+    overflow-y: auto;
+    
   }
 `;
 const StyledDiv = mStyled(Box)`
