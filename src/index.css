@@ -27,6 +27,7 @@ body {
   min-height: 100svh;
   display: grid;
   place-content: center;
+  background-color: #bae8e6;
 }
 /*
   5. Improve media defaults
